@@ -1,0 +1,131 @@
+/*Landing*/
+
+.contact__img{
+    background-image: url('/img/contact.jpg');
+}
+
+/*Contact*/
+
+.contact__outer{
+    padding: 7vh 0 7vh;
+}
+
+.map__form{
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 80vh;
+    width: 60%;
+    margin: auto;
+}
+
+.col{
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(250, 255, 250);
+    flex: 1;
+    
+    margin: 60px 0 60px 0; 
+}
+
+.inner__col{
+    display: flex;
+    color: black;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+
+
+/*Form*/
+
+.special__letter{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(8, 141, 8);
+    
+}
+
+.form{
+    display: flex;
+    margin: auto;
+    height: 80%;
+}
+
+input[type=text]{
+    height: 10vh;
+    min-width: 20vw;
+    border: 2px solid green;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+textarea{
+    border: 2px solid green;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    max-height: 60vh;
+}
+
+::placeholder{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.btn__submit{
+    align-items: center;
+   appearance: none;
+   background-color: #168539;
+ /*   background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%); */
+   background-size: calc(100% + 20px) calc(100% + 20px);
+   border-radius: 100px;
+   border-width: 0;
+   box-shadow: none;
+   color: #F6EFEE;
+   cursor: pointer;
+   display: inline-flex;
+   font-family: 'Helvetica Neue', sans-serif;
+   font-size: 1.5rem;
+   height: 50px;
+   width: 150px;
+   justify-content: center;
+   line-height: 1.5;
+   padding: 6px 20px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   transition: background-color .2s,background-position .2s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: top;
+   white-space: nowrap;
+}
+
+.btn__submit:hover{
+    background-color: #a5f7bd;
+    color: #168539;
+    border: 2px solid #168539;
+  }
+
+/*Media query*/
+
+@media screen and (max-width: 900px){
+    .map__form{
+        flex-flow: column-reverse wrap;
+    }
+
+    .col{
+        margin: 0; 
+        padding: 30px 0 30px 0;
+    }
+
+    .inner__col{
+        overflow: hidden;
+
+    }
+}

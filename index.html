@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GAIA global enviromental</title>
+</head>
+<body onresize="toggleNav()">
+    <div class="landing">
+        <video autoplay muted loop class="my__video">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+        <div class="video__content">
+            <nav class="nav transparent">
+                <div class="logo__div">
+                  <img src="img/logo.png" class="logo">
+                </div>
+                <div class="navigator__nav">
+                    <ul class="navigator">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button-2>
+                                    <a href="activities.html">Activities</a>
+                                </button-2>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__links" href= "recycling.html">Recycling</a><br>
+                                    <a class="dropdown__links" href="forest.html">Forest</a><br>
+                                    <a class="dropdown__links" href="sea.html">Sea</a><br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                   
+                    <ul class="navigator">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                    </ul>
+                    <a href=# class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="gaia__title">
+                GAIA.
+            </div>
+            <div class="gaia__description">
+                <p class="p__gaia">
+                    GAIA helps highlights global environmental issues that pose
+                    an immediate threat or danger to ecosystems throughout the
+                    world.
+                </p>
+                <button class="btn" role="button" onclick="window.location.href='activities.html';">
+                    Find out more
+                </button>
+        
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+    <script src="js/index.js"></script>
+    <script src="js/helpers.js"></script>
+</html>

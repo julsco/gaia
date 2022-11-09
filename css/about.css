@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/*Landing*/
+
+.about__img{
+    background-image: url('/img/about.jpg'); 
+}
+
+/*Sections*/
+
+.block{
+    height: auto;
+    display: flex;
+    padding: 7vh 0 7vh;
+    gap: 10vh;
+}
+
+.section__title{
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+.centered__description{
+    width: 50%;
+    font-size: 30px;
+    align-self: center;
+}
+
+/*Meet the team*/
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 7vw;
+    justify-content: center;
+}
+
+.employee{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* background-color: #e8e8cf; */
+    background-color: #80a88a;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2px black; */
+    height: 600px;
+    width: 400px;
+}
+
+.employee__pic{
+    overflow: hidden;
+    display: flex;
+}
+
+.employee__pic img{
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+}
+
+.employee__name{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.employee__description{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/*History*/
+
+.insider__block{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    gap: 7vh;
+    padding: 7vh 0 7vh;
+    margin: auto;
+}
+
+.history__box{
+    display: flex;
+    flex: 1;
+    margin: auto;
+    min-height: 1000px;
+}
+
+.pic__history{
+    display: flex;
+    flex: 1;
+    margin: auto;
+    min-height: 1000px;
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.history__text{
+    font-size: 30px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    text-align: right;
+}
+
+.history__img{
+    background-image: url('/img/history.jpg'); 
+}
+
+@media screen and (max-width: 900px){
+    .history__box{
+        flex-flow: column wrap;
+    }
+
+    .box__pic{
+        margin: 0;
+    }
+}

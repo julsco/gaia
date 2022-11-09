@@ -1,0 +1,166 @@
+@import "helpers.css";
+
+/* Video */
+
+.hidden{
+    display: none;
+  }
+  
+  .my__video{ 
+    min-height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .landing{
+    height: 100vh;
+  }
+  
+  .video__content{
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    color: #F6EFEE;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+ 
+  
+  /*Description*/
+  
+  /*Title*/
+  
+  .gaia__title{
+    text-align: left;
+    min-height: 35vh;
+    padding: 50px 150px 0px 150px;
+  
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 275px;
+    font-weight: bold;
+    letter-spacing: -15px;
+    line-height: 1;
+  }
+
+  .gaia__description{
+    font-size: 30px;
+    min-height: 40vh;
+    height: auto;
+    width: 60%;
+    padding: 10px 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+} 
+  
+/* .background__active{
+    line-height: 50px;
+    background: #717167;
+    margin: 3px;
+    padding: 0 5px 0 5px;
+  }
+   */
+  
+ /* BUTTON */
+
+ .btn {
+   align-items: center;
+   appearance: none;
+   background-color: #168539;
+ /*   background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%); */
+   background-size: calc(100% + 20px) calc(100% + 20px);
+   border-radius: 100px;
+   border-width: 0;
+   box-shadow: none;
+   color: #F6EFEE;
+   cursor: pointer;
+   display: inline-flex;
+   font-family: 'Helvetica Neue', sans-serif;
+   font-size: 1.5rem;
+   height: 70px;
+   width: 220px;
+   justify-content: center;
+   line-height: 1.5;
+   padding: 6px 20px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   transition: background-color .2s,background-position .2s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: top;
+   white-space: nowrap;
+ }
+
+.btn:hover{
+  background-color: #a5f7bd;
+  color: #168539;
+  border: 2px solid #168539;
+
+}
+  /*Media queries*/
+  
+  @media screen and (max-width: 900px){
+  
+    .navigator{
+      height: auto;
+      display: none;
+      flex-direction: column;
+      font-size: 25px;
+      justify-content: flex-end;
+      padding: 90px;
+      gap: 25px;
+    }
+    
+    .navigator__nav{
+      justify-content: flex-end;
+      padding-right: 70px;
+    }
+  
+    .navigator__nav a.icon{
+      display: block;
+    }
+  
+    .gaia__description{
+      flex-wrap: wrap;
+      padding: 40px 0 0 20px;
+      text-align: right;
+      width: 400px;
+    }
+  
+    .background__active{
+      font-size: 25px;
+      line-height: 25px;
+      background: #717167;
+    }
+  
+    .gaia__title{
+      font-size: 200px;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 900px) and (max-width: 600px){
+    .gaia__title{
+      font-size: 150px;
+      padding: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 360px){
+    
+    .gaia__title{
+      font-size: 120px;
+      padding: 40px;
+    }
+  
+  
+  }

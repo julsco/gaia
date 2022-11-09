@@ -1,0 +1,11 @@
+.recycling__background{
+    background-image: url('/img/recyclingLanding.jpg');
+}
+
+.forest__background{
+    background-image: url('/img/forestLanding.jpg');
+}
+
+.sea__background{
+    background-image: url('/img/seaLanding.jpg');
+}
