@@ -1,0 +1,139 @@
+/*Navigator*/
+  
+.nav{
+    width: 100%;
+    display: flex;
+    height: auto;
+  }
+  
+  .logo__div{
+    width: 30%;
+    display: flex;
+  
+  }
+  
+  .logo{
+  
+    height: 200px;
+    width: auto;  
+  }
+  
+  .navigator__nav{
+    width: 70%;
+    display: flex;
+  }
+  
+  .navigator{
+    height: 5vh;
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    font-size: 25px;
+    justify-content: flex-end;
+    padding: 80px;
+  }
+  
+  #active{
+    color:#a5f7bd;
+  }
+  
+  .navigator a{
+    text-decoration: none;
+    color: #F6EFEE;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .navigator a:hover{
+    color: #a5f7bd;
+  }
+  
+  .navigator a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #a5f7bd;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  .navigator a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /*dropdown*/
+  
+  .dropdown {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  button-2{
+    text-decoration: none;
+    color: #dbd2e0;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+  }
+  
+  .dropdown-content {
+    margin: 0 -30px;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.322);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.315);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .dropdown__links{
+    font-size: 20px;
+  }
+  
+  /*Hamburguer*/
+  
+  .navigator__nav a.icon{
+    background-color: transparent;
+    color: #F6EFEE;
+    cursor: pointer;
+    font-size: 50px;
+    display: none;
+    padding-right: 1em;
+  }
+
+
+/*media queries*/
+
+  @media screen and (max-width: 900px){
+  
+    .navigator{
+      height: auto;
+      display: none;
+      flex-direction: column;
+      font-size: 25px;
+      justify-content: flex-end;
+      padding: 90px;
+      gap: 25px;
+    }
+    
+    .navigator__nav{
+      justify-content: flex-end;
+      padding-right: 70px;
+    }
+  
+    .navigator__nav a.icon{
+      display: block;
+    }
+}

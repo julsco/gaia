@@ -1,10 +1,6 @@
 @import "helpers.css";
 
 /* Video */
-
-.hidden{
-    display: none;
-  }
   
   .my__video{ 
     min-height: 100vh;
@@ -109,25 +105,6 @@
   /*Media queries*/
   
   @media screen and (max-width: 900px){
-  
-    .navigator{
-      height: auto;
-      display: none;
-      flex-direction: column;
-      font-size: 25px;
-      justify-content: flex-end;
-      padding: 90px;
-      gap: 25px;
-    }
-    
-    .navigator__nav{
-      justify-content: flex-end;
-      padding-right: 70px;
-    }
-  
-    .navigator__nav a.icon{
-      display: block;
-    }
   
     .gaia__description{
       flex-wrap: wrap;
